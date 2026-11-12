@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Form</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Project Management</h1>
+        <p class="subtitle">Manage and track your project assignments</p>
+
+        <form id="projectForm">
+            <div class="form-group">
+                <label for="projectId">Project ID</label>
+                <input type="text" id="projectId" placeholder="Enter Project ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="projectName">Project Name</label>
+                <input type="text" id="projectName" placeholder="Enter Project Name" disabled required>
+            </div>
+
+            <div class="form-group">
+                <label for="assignedTo">Assigned To</label>
+                <input type="text" id="assignedTo" placeholder="Enter Assignee Name" disabled required>
+            </div>
+
+            <div class="form-group">
+                <label for="assignmentDate">Assignment Date</label>
+                <input type="date" id="assignmentDate" disabled required>
+            </div>
+
+            <div class="form-group">
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" disabled required>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="saveBtn" disabled>Save</button>
+                <button type="button" id="updateBtn" disabled>Update</button>
+                <button type="button" id="resetBtn" disabled>Reset</button>
+            </div>
+
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
